@@ -1,0 +1,135 @@
+.container-flow {
+  .bg-image-top {
+    &-1 {
+      background: url(/images/bg-section-top-desktop-1.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 200px;
+    }
+
+    &-2 {
+      background: url(/images/bg-section-top-desktop-2.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  .bg-image-bottom {
+    &-1 {
+      background: url(/images/bg-section-bottom-desktop-1.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 200px;
+    }
+
+    &-2 {
+      background: url(/images/bg-section-bottom-desktop-2.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 100%;
+      height: 200px;
+    }
+  }
+
+  &-child {
+    display: flex;
+    gap: 10rem;
+    padding: 0 6rem;
+  }
+
+  .text {
+    flex: 1;
+
+    h2 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      max-width: 33rem;
+    }
+  }
+
+  .illustration {
+    flex: 1;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .grow-together {
+    background-color: $veryPaleBlue;
+  }
+
+  .flowing-conversation {
+    margin: 10rem 0;
+  }
+
+  .your-users {
+    background-color: $veryPaleBlue;
+  }
+}
+
+// Mobile Design
+@media (max-width: 1000px) {
+  .container-flow {
+    .bg-image-top {
+      &-1 {
+        background: url(/images/bg-section-top-mobile-1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+      }
+    }
+
+    &-2 {
+      background: url(/images/bg-section-top-mobile-2.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 250px;
+    }
+
+    .bg-image-bottom {
+      &-1 {
+        background: url(/images/bg-section-bottom-mobile-1.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      &-2 {
+        background: url(/images/bg-section-bottom-mobile-2.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    }
+
+    &-child {
+      flex-direction: column-reverse;
+      gap: 3rem;
+      padding: 2rem;
+    }
+
+    .text {
+      text-align: center;
+      margin: 0 auto;
+
+      h2 {
+        font-size: 1.2rem;
+      }
+
+      p {
+        max-width: 20rem;
+        font-size: 0.9rem;
+      }
+    }
+
+    .flowing-conversation {
+      margin: 0;
+      flex-direction: column;
+    }
+  }
+}

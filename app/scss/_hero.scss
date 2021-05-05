@@ -1,0 +1,94 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0;
+    }
+
+    p {
+      max-width: 34rem;
+      margin-bottom: 2rem;
+      font-size: 1.125rem;
+    }
+  }
+
+  &-mockup {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+  }
+
+  .count {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5rem;
+
+    h2 {
+      font-size: 5rem;
+      margin: 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: gray;
+    }
+
+    .container {
+      > .icon {
+        text-align: left;
+      }
+    }
+  }
+}
+
+// Mobile Design
+@media (max-width: 1000px) {
+  .hero {
+    &-text {
+      max-width: 20rem;
+      margin: 0 auto;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+    }
+
+    &-mockup {
+      padding: 3rem 2rem;
+
+      img {
+        width: 100%;
+      }
+    }
+
+    .count {
+      flex-direction: column;
+      gap: 7rem;
+
+      .container {
+        max-width: 50%;
+        margin: 0 auto;
+
+        h2 {
+          font-size: 4rem;
+        }
+
+        p {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
